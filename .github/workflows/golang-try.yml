@@ -15,6 +15,7 @@ jobs:
       - run: go mod tidy
       - run: go install gioui.org/cmd/gogio@latest
       - run: gogio -target js random.msg
+      - uses: actions/checkout@v3
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Translate to Wasm
