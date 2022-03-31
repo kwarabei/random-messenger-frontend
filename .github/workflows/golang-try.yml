@@ -17,6 +17,6 @@ jobs:
       - run: gogio -target js random.msg
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Translate to wasm
+          commit_message: Translate to Wasm
           branch: frontend/wasm
           create_branch: true
